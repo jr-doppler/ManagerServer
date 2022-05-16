@@ -1,0 +1,31 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "password1"
+}
+
+###
+DELETE http://localhost:8080/users?id=asd23234
+Authorization: usqqaqav5u
+
+###
+GET http://localhost:8080/users?id=asd23234
+Authorization: g5ikn6bflsr
+
+###
+GET http://localhost:8080/users?name=John
+Authorization: ln9vyfl4cd
+
+###
+PUT http://localhost:8080/users
+Authorization: w3lx8kr1y5
+Content-Type: application/json
+
+{
+    "age": 45,
+    "email": "some@otheremail.com",
+    "name": "barosanu",
+    "workingPosition": 3
+}
